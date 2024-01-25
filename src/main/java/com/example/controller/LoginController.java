@@ -17,8 +17,13 @@ public class LoginController {
 
   @GetMapping(value="/login")
   public String showLoginPage(ModelMap model){
-    return "login";
+    return "jsp/login";
   }
+
+//  @GetMapping(value="/hello")
+//  public String hello(ModelMap model){
+//    return "hello";
+//  }
 
   @PostMapping(value="/login")
   public String showWelcomePage(ModelMap model, @RequestParam String name, @RequestParam String password){
@@ -27,12 +32,12 @@ public class LoginController {
 
     if (!isValidUser) {
       model.put("errorMessage", "Invalid Credentials");
-      return "login";
+      return "jsp/login";
     }
 
     model.put("name", name);
     model.put("password", password);
 
-    return "welcome";
+    return "jsp/welcome";
   }
 }
