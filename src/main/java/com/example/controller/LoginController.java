@@ -22,6 +22,11 @@ public class LoginController {
     return "jsp/login";
   }
 
+  @GetMapping(value="/hello")
+  public String hello(ModelMap model){
+    return "hello.html";
+  }
+
   @PostMapping(value="/login")
   public String showWelcomePage(ModelMap model, @RequestParam String name, @RequestParam String password){
 
