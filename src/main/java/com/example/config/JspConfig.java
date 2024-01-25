@@ -8,7 +8,7 @@ import org.springframework.web.servlet.view.JstlView;
 import org.thymeleaf.spring6.templateresolver.SpringResourceTemplateResolver;
 
 @Configuration
-public class JspMvcConfig {
+public class JspConfig {
   @Bean
   public InternalResourceViewResolver jspViewResolver(){
     final InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
