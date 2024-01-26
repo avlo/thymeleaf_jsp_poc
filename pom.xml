@@ -9,11 +9,11 @@
     <relativePath/> <!-- lookup parent from repository -->
   </parent>
   <groupId>com.example</groupId>
-  <artifactId>jsp-poc</artifactId>
+  <artifactId>thymeleaf-jsp-poc</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
-  <name>jsp-poc</name>
-  <description>jsp-poc</description>
+  <name>thymeleaf-jsp-poc</name>
+  <description>thymeleaf-jsp-poc</description>
   <properties>
     <java.version>17</java.version>
   </properties>
